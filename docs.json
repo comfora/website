@@ -1,68 +1,40 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Comfora",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FFCC4D",
+    "light": "#FFCC4D",
+    "dark": "#B38000"
   },
-  "favicon": "/favicon.svg",
+  "seo": {
+    "metatags": {
+        "canonical": "https://comfora.org"
+    }
+  },
+  "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Home",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Home",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "index"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Comfora Corner",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Organization Directory",
+            "icon": "building",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "about",
+              "sponsors"
             ]
           }
         ]
@@ -71,52 +43,52 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://blog.comfora.org",
           "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "light": "/logo/comfora.svg",
+    "dark": "/logo/comfora.svg"
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+  ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/comfora",
+      "discord": "https://discord.gg/7pAmWQqGhF",
+      "bluesky": "https://bsky.app/profile/comfora.org",
+      "x": "https://twitter.com/comforaorg",
+      "website": "https://mastodon.social/@comfora",
+      "reddit": "https://www.reddit.com/user/comforaorg/"
     }
+  },
+  "appearance": {
+    "strict": true,
+    "default": "dark"
+  },
+  "background": {
+    "decoration": "grid"
+  },
+  "integrations": {
+    "posthog": {
+        "apiKey": "phc_Hv0bBJPJPePtw9lCiEPgLWgbmxwGrLPRf7xaZWEwmzh"
+    }
+  },
+  "fonts": {
+    "family": "Roboto Slab"
   }
 }
