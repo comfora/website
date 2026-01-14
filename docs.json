@@ -36,6 +36,13 @@
               "about",
               "sponsors"
             ]
+          },
+          {
+            "group": "Guidelines & Policies",
+            "icon": "scale-balanced",
+            "pages": [
+              "guidelines/discord"
+            ]
           }
         ]
       }
