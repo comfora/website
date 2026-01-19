@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "Comfora",
   "colors": {
     "primary": "#FFCC4D",
@@ -14,37 +14,41 @@
   },
   "favicon": "/favicon.ico",
   "navigation": {
-    "tabs": [
+    "products": [
       {
-        "tab": "Home",
+        "product": "Comfora",
+        "description": "Welcome to Comfora",
+        "icon": "campfire",
         "groups": [
-          {
-            "group": "Home",
-            "pages": [
-              "index"
-            ]
-          }
-        ]
+        {
+          "group": "Bonfire",
+          "icon": "campfire",
+          "pages": [
+            "index"
+          ]
+        },
+        {
+          "group": "Organization Directory",
+          "icon": "building",
+          "pages": [
+            "about",
+            "sponsors"
+          ]
+        },
+        {
+          "group": "Guidelines & Policies",
+          "icon": "scale-balanced",
+          "pages": [
+            "guidelines/discord"
+          ]
+        }
+      ]
       },
       {
-        "tab": "Comfora Corner",
-        "groups": [
-          {
-            "group": "Organization Directory",
-            "icon": "building",
-            "pages": [
-              "about",
-              "sponsors"
-            ]
-          },
-          {
-            "group": "Guidelines & Policies",
-            "icon": "scale-balanced",
-            "pages": [
-              "guidelines/discord"
-            ]
-          }
-        ]
+        "product": "Comfora Scriptor",
+        "description": "CLI management tool for server environments",
+        "icon": "server",
+        "href": "https://scriptor.comfora.org"
       }
     ],
     "global": {
@@ -76,19 +80,47 @@
   "footer": {
     "socials": {
       "github": "https://github.com/comfora",
-      "discord": "https://discord.gg/7pAmWQqGhF",
+      "discord": "https://comfora.org/discord",
       "bluesky": "https://bsky.app/profile/comfora.org",
       "x": "https://twitter.com/comforaorg",
       "website": "https://mastodon.social/@comfora",
       "reddit": "https://www.reddit.com/user/comforaorg/"
-    }
+    },
+    "links": [
+      {
+        "header": "Resources",
+        "items": [
+          {
+            "label": "Status Page",
+            "href": "https://status.comfora.org"
+          },
+          {
+            "label": "Blog",
+            "href": "https://blog.comfora.org"
+          }
+        ]
+      },
+      {
+        "header": "Projects",
+        "items": [
+          {
+            "label": "Comfora Scriptor",
+            "href": "https://scriptor.comfora.org"
+          },
+          {
+            "label": "Comfora Marketplace",
+            "href": "https://github.com/comfora-marketplace"
+          }
+        ]
+      }
+    ]
   },
   "appearance": {
     "strict": true,
     "default": "dark"
   },
   "background": {
-    "decoration": "grid"
+    "decoration": "gradient"
   },
   "integrations": {
     "posthog": {
@@ -97,5 +129,11 @@
   },
   "fonts": {
     "family": "Roboto Slab"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/kd4JQSaKDP"
+    }
+  ]
 }
